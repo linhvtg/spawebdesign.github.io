@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ /* Centered text */
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+ 
+
+.carousel-caption {
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.container1 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding-left: 200px;
+  padding-top: 20px;
+}
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 2px ;
+  display: flex;
+
+
+
+}
+
+/* Add padding BETWEEN each column (if you want) */
+
+.row > .column {
+  padding: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+ 
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  color: grey;
+
+
+}
+
+.container {
+  padding-top: 10px;
+
+}
+ /* ROW 2 */
+ .row1 {
+  display: flex;
+  }
+  .row1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: space-betwen;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin: 50px;
+    text-align: center;
+  }
+  .containerp {
+    padding-top: 200px;
+  }
+
+  .button {
+  border-radius: 4px;
+  background-color: #FAEBD7;
+  text-align: center;
+  font-size: 18px;
+  padding: 6px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 50px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.row img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
+  }
+ 
+ h1 { font-family: 'Patua One', serif; }
+ h2 { font-family: 'Patua One', serif; }
+ h4 { font-family: 'Patua One', serif; }
+h5 { font-family: 'Francois One', sans-serif; }
+p { font-family: 'Francois One', sans-serif; }
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: LightCoral; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 60px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#5F9EA0;
+  color: white;
+ display: flex;
+ flex-direction: row;
+  justify-content: space-between ;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+/*.row{
+ 
+    text-align: center;
+}*/
+/* Style the icon bar links */
+.icon-bar a {
+  
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  border-radius: 50px;
+  padding-top: 5px;
+
+
+  
+
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white; 
+}
+
+.instagram {
+  background: linear-gradient(to bottom right, #ff9900 0%, #cc0066 73%);
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+  <!-- My navbar code starts here -->
+
+  <nav class="navbar navbar-expand-sm navbar-light" style="background-color: CadetBlue; ">
+
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+    <img src="CODING IMGAGE/spalogo 1.png" style="width: 15%;">
+  </a>
+  
+  <!-- Links -->
+
+  <ul class="navbar-nav ml-auto" style="padding-right: 30px; ">    
+
+    <li class="nav-item">
+      <a class="nav-link" href="index.html" style="color: white;">Home</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="about.html"style="color: white;">About Us</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="service.html"style="color: white;">Services</a>
+    </li>
+
+
+   
+
+  </ul>
+</nav>
+
+
+  <div>
+    <div class="image">
+  <img src="CODING IMGAGE/sv8.jpg" alt="STRØM SERVICE" style="width:100%;">
+  <div class="centered"> <h1 style="font-size: 70px;"> ABOUT STRØM </h1></div>
+    
+  </div>
+
+
+ <!--- row 2 --->
+
+<div class="row1"  >
+  
+
+  <div class="column2" style="padding-left: 50px; padding-right: 100px;">
+    <div class="containerp"> 
+        <h2 style="color: CadetBlue;">THE ORIGIN OF THE WORD STRØM </h2>
+        <p style="margin-top: 30px;">Evoking the power and the tranquility of water, the term strøm, borrowed from Scandinavian languages, designates a current, but also means, figuratively, the energy linked to movement, to displacement. The term strøm illustrates the living force, channeled, which carries with it the vestiges of its source to nourish and deeply transform the course of things; it constitutes regeneration, towards a state of equilibrium. </p>
+        <button class="btn button" style="color: black;"><span>View more </span></button>
+      </div>
+    </div>
+
+
+    <div class="column2" style="padding-left: 50px; padding-right: 50px;">
+    <div class="container2"> 
+        <img src="CODING IMGAGE/strom1.jpg" style="width: 700px; ">
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+<!--- row 3 --->
+
+<div class="row1"  >
+  <div class="column2" style="padding-left: 50px; padding-right: 50px;">
+    <div class="container2"> 
+        <img src="CODING IMGAGE/strom2.jpg" style="width: 700px; ">
+      </div>
+    </div>
+
+
+
+  <div class="column2" style="padding-left: 50px; padding-right: 100px;">
+    <div class="containerp"> 
+        <h2 style="color: CadetBlue;">HISTORY</h2>
+        <p style="margin-top: 30px;">The Strøm was founded from a simple idea: to combine Nordic spa and urbanity, for a rejuvenating experience of relaxation. This balance, which our customers also find, is based on facilities in the heart of nature, just minutes from urban centers. Officially open since 2009, Strøm continues to develop, both in terms of its growth and its public and tourist recognition.  </p>
+        <h2 style="color: CadetBlue;">MISSION</h2>
+        <p style="margin-top: 30px;">We aspire to be the equilibrium environment of a person and his community.</p>
+       <button class="btn button" style="color: black;"><span>View more </span></button>
+      </div>
+    </div>
+
+
+  </div>
+
+    <!-- ------------------------------ -->
+
+   <div style="margin-right: 420px; padding-left: 420px; margin-top: 100px; margin-bottom: 100px;" >
+    <h2 style="text-align: center; color: CadetBlue ; margin-top: 30px;">SELECTION</h2>
+    <p style="text-align: center; margin-top: 30px; ">The Strøm Nordic spa contacted the non-profit organization L'APPUI, in order to be helped in the support and development of its project. APPUI allows caregivers of seniors to benefit from personalized support throughout their journey, during which an advisor will help them define their network and their needs, learn about the services available to them in their region or to establish those who would be useful to them, to recognize their aptitudes and their strengths, their difficulties and their limitations. Thanks to this conscientious support and knowledge of the family caregiver organization, Strøm can offer free services tailored to the needs of caregivers: access to the thermal experience, skin care, massage therapy, meditation, rest room. , access for people with reduced mobility, meals and snacks, etc. The offer is therefore adapted for each family caregiver so that they can derive the greatest possible benefit from it. The collaboration between L'APPUI and Strøm allows support even before the first appointment call at Strøm. Thus, the organization validates their interests and needs with candidates, and Strøm then takes care of the first contact with the caregiver. Strøm wishes to avoid any additional hassle and stress that may be associated with a new experience. To do this, a Strøm employee is completely dedicated to caregivers. He serves as the point of contact for all questions before, during and after the stay. He will also validate the needs of the caregiver and offer him activities and services adapted to his needs. Furthermore. </p>
+  </div>
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+  <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<!-- footer -->
+
+<div class="footer" >
+
+
+   <!-- first row -->
+
+      <div class="col" style="text-align: left;padding-left: 5%;"> <!-- first column -->
+      <h4>STRØM SPA </h4>
+    <p> 40B - 47D Phạm Ngọc Thạch, quận 3, Tp. Hồ Chí Minh </p> 
+    <p>028 3521 320</p> 
+    <p>INFO@stromspa.COM</p>
+        </div>
+
+          
+
+
+
+
+  
+  <div class="col" style="text-align:left;padding-right: 3%; "> <!-- second col -->
+
+
+    <div class="icon-bar">
+    <a href="https://www.facebook.com/stromspa/" class="facebook"><i class="fa fa-facebook"></i></a>
+
+    <a href="https://www.instagram.com/stromspa/" class="instagram"><i  class="fa fa-instagram"> </i></a>
+
+    <a href="https://www.youtube.com/user/StromSpaNordique/" class="youtube"><i class="fa fa-youtube"></i></a>
+
+    <a href="https://www.stromspa.com/" class="google"> <i class="fa fa-google" > </i></a>
+  </div>
+
+
+
+    <!-- input form -->
+
+      <form class="form-inline" action="/action_page.php" style="margin-top: 20px;">
+      <input class="form-control mr-sm-2" type="text" placeholder="Emails">
+      <button class="btn btn-success" type="submit" style="background-color: #FFDEAD; color: black;">SEND</button>
+    </form>
+
+
+  <p style="text-align: down;margin-top: 50px;">Disclaimer : This website has been done as a part of Assignment, this company does not exist.</p>
+
+
+  </div>
+
+
+</div>
+
+</body>
+
+</html>
